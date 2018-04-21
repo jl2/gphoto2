@@ -9,6 +9,6 @@
   :license  "ISC"
   :version "0.0.1"
   :serial t
-  :depends-on (#:cffi #:cl-autowrap #:cl-autowrap/libffi #:cl-plus-c)
+  :depends-on (#:cffi #:cffi-libffi)
   :components ((:file "package")
                (:file "gphoto2")))
