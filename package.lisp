@@ -16,6 +16,7 @@
            #:gp-port-info-list-count
            #:gp-port-info-list-get-info
            #:gp-port-info-list-lookup-path
+           #:gp-port-info-list-lookup-name
 
            #:gp-list-new
            #:gp-list-free
@@ -23,6 +24,9 @@
            #:gp-list-get-name
            #:gp-list-get-value
 
+           #:gp-port-new
+           #:gp-port-free
+           
            #:gp-abilities-list-new
            #:gp-abilities-list-free
            #:gp-abilities-list-load
@@ -33,9 +37,21 @@
 
 
            #:gp-camera-new
+           #:gp-camera-free
            #:gp-camera-set-abilities
            #:gp-camera-set-port-info
+           #:gp-camera-get-summary
            #:gp-camera-init
+           #:gp-camera-exit
+           #:gp-camera-get-config
+           #:gp-widget-get-child-by-name
+           #:gp-widget-get-name
+           #:gp-widget-get-label
+           #:gp-widget-get-id
+           #:gp-widget-get-type
+           #:gp-widget-set-value
+           #:gp-camera-setconfig
+           #:gp-camera-get-config-by-name
 
            #:camera-abilities
            #:port-info
@@ -51,6 +67,8 @@
    #:list-cameras
    #:create-context
    #:create-camera
+   #:enable-capture
+   #:cleanup-camera
    ))
 
 
