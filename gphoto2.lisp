@@ -8,7 +8,7 @@
 (cffi:define-foreign-library gphoto-lib
   (:darwin (:or "libgphoto2.dylib" (:framework "gphoto2")))
   (:windows "gphoto2.dll")
-  (:unix "libSDL_gfx.so"))
+  (:unix "libgphoto2.so"))
 
 (cffi:use-foreign-library gphoto-lib)
  
